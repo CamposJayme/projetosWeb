@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightslategray;
+    /*background-image: url(imagens/Genshin\ Impact_20200928161506.png);*/
+    background-repeat: no-repeat;
+    background-size: 1900px 1800px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: #000000d6;
+}
+
+header > .logo, img {
+    width: 300px;
+    height: 100px;
+    margin: auto;
+}
+
+nav {
+    background-color: #000000ba;
+    padding: 10px;
+    text-align: center;
+}
+
+nav > a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: #000000;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.268);
+    padding: 14px;
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home, .notícias, .personagens, .imagens, .videos {
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parte03 {
+    margin: auto;
+}
+
+.avatar01, .avatar02, .avatar03, .avatar04, .avatar05, .avatar06 {
+    display: inline-block;
+    height: 230px;
+    width: 240px;
+    background-color: rgba(211, 211, 211, 0.59);
+    margin: 20px 25px 0px 30px;
+    border-radius: 5px;
+}
+
+.avatar01 > img, .avatar02 > img, .avatar03 > img, .avatar04 > img, .avatar05 > img, .avatar06 > img{
+    display: inline-block;
+    height: 230px;
+    width: 240px;
+    margin: 0px 0px 15px 0px;
+    border-radius: 5px;
+}
+
+.avatar01:hover, .avatar02:hover, .avatar03:hover, .avatar04:hover, .avatar05:hover, .avatar06:hover {
+    transform: scale(1.25);
+}
+
+div.video {
+    margin-bottom: 20px;
+    background-color: rgba(211, 211, 211, 0.59);
+    padding: 10px;
+    padding-bottom: 58.8%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 96%;
+    height: 90%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align:  center;
+    padding: 2px;
+}
+
+footer > p {
+    margin: 5px;
+}
