@@ -2,9 +2,9 @@
 
 body {
     background-color: lightslategray;
-    /*background-image: url(imagens/Genshin\ Impact_20200928161506.png);*/
+    background-image: url(imagens/Genshin\ Impact_20200928161506.png);
     background-repeat: no-repeat;
-    background-size: 1900px 1800px;
+    background-size: cover;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -22,7 +22,7 @@ header > .logo, img {
 
 nav {
     background-color: #000000ba;
-    padding: 10px;
+    padding: 11px;
     text-align: center;
 }
 
@@ -38,6 +38,7 @@ nav > a {
 
 nav > a:hover {
     background-color: #000000;
+    border: 1px solid white;
 }
 
 main {
@@ -59,24 +60,35 @@ main {
     margin: auto;
 }
 
-.avatar01, .avatar02, .avatar03, .avatar04, .avatar05, .avatar06 {
+div.avatar01 {
+    width: 200px;
     display: inline-block;
-    height: 230px;
-    width: 240px;
-    background-color: rgba(211, 211, 211, 0.59);
-    margin: 20px 25px 0px 30px;
-    border-radius: 5px;
+    margin: 15px 45px 15px;
 }
 
-.avatar01 > img, .avatar02 > img, .avatar03 > img, .avatar04 > img, .avatar05 > img, .avatar06 > img{
-    display: inline-block;
-    height: 230px;
-    width: 240px;
-    margin: 0px 0px 15px 0px;
+div.avatar01 > img {
     border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: rgba(211, 211, 211, 0.712);
 }
 
-.avatar01:hover, .avatar02:hover, .avatar03:hover, .avatar04:hover, .avatar05:hover, .avatar06:hover {
+div.avatar02 {
+    width: 200px;
+    display: inline-block;
+    margin: 15px 45px 15px;
+}
+
+div.avatar02 > img {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: lightgrey;
+}
+
+.avatar01:hover, .avatar02:hover {
     transform: scale(1.25);
 }
 
@@ -105,4 +117,20 @@ footer {
 
 footer > p {
     margin: 5px;
+}
+
+@media screen and (max-width: 804px) {
+    nav {
+        display: grid;
+    }
+
+    div.avatar01 {
+        margin: auto;
+        margin: 10px 20px 10px 5px;
+    }
+
+    div.avatar02 {
+        margin: auto;
+        margin: 10px 20px 10px 5px;
+    }
 }
